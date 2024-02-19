@@ -1,3 +1,3 @@
 test('Sample Test', () => {
-  expect(1 + 5).toBe(6);
+  expect(2 + 5).toBe(7);
 });
