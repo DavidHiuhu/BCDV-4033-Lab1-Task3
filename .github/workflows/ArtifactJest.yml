@@ -15,8 +15,8 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
-      - name: Build project assets
-        run: npm run build
+      - name: Run Jest tests
+        run: npm test
 
       - name: Upload static site content
         uses: actions/upload-artifact@v3
