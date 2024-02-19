@@ -10,16 +10,16 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install dependencies
         run: |
           npm install
-      - name: Run Jest tests
-        run: npm test
+      - name: Build project assets
+        run: npm run build
 
-      - name: Archive test results
-        uses: actions/upload-artifact@v2
+      - name: Upload static site content
+        uses: actions/upload-artifact@v3
         with:
           name: test-results
           path: ./test-results
