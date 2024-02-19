@@ -3,6 +3,18 @@
     "test": "jest --outputFile=./test-results/test-results.xml"
   },
   "jest": {
-    "reporters": ["default", ["jest-junit", { "outputDirectory": "./test-results", "outputName": "test-results.xml" }]]
+    "reporters": [
+      "default",
+      [
+        "jest-junit",
+        {
+          "outputDirectory": "./test-results",
+          "outputName": "test-results.xml"
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
