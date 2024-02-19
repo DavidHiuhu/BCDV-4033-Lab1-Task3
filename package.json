@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "test": "jest --outputFile=./test-results/test-results.xml"
+    "test": "jest --outputFile=./test-results/test-results.xml",
+    "build": "echo 'No build step required'"
   },
   "jest": {
     "reporters": [
@@ -19,3 +20,4 @@
     "jest-junit": "^12.0.0"
   }
 }
+
